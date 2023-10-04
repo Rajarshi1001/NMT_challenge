@@ -21,18 +21,27 @@ This folder has all the python scripts and the notebooks containing implementati
 2. Choose which model you want to train and perform inference on your test set.
 
     - For training with `LSTM without Attention model`:
-    ```py
-    > python3 lstmseq2seq_train.py
+    ```bash
+    $ python3 lstmseq2seq_train.py
     ```
     - For training with `GRU without Attention model`:
-    ```py
-    > python3 gruseq2seq_train.model
+    ```bash
+    $ python3 gruseq2seq_train.model
     ```
     - For training with `GRU with Attention model`:
-    ```py
-    > python3 gruseq2seq2attn_train.py
+    ```bash
+    $ python3 gruseq2seq2attn_train.py
     ```
     - For training with `Transformer model`:
-    ```py
-    > python3 transformer_train.py
+    ```bash
+    $ python3 transformer_train.py
     ```
+### Inference steps:
+
+1. There are transformer models params saved on a google drive but these models are not that efficient since they are only trained for 1 epoch for reference and stored as `.pth files`. For inferencing on a sample test set with the same format as the `train_ata.json`.
+        - Firstly download the `test_data.json` from the required source.
+        - Save it in a google drive link and download the drive link in a cell present in he script `NMT_final_script.ipynb`
+        - Run the script
+
+The script esssentially takes first 10 sentences from each of the language csv files and produces translations and combines them into a single `answer.csv` file under the `transformer_translations` folder creates while running the script. 
+
