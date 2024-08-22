@@ -1,4 +1,4 @@
-# Machine Translation Chnallenge
+# Machine Translation Challenge
 
 This folder has all the python scripts and the notebooks containing implementation of the models like __LSTM Sequence to Sequence__, __GRU Sequence to Sequence__, __GRU Sequence to Sequence with Attention__, __Transformer__ model. The entire file structure for the following folder is shown:
 
