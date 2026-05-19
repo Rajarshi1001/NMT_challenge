@@ -65,7 +65,8 @@ This folder has all the python scripts and the notebooks containing implementati
     ```
 ### Inference steps:
 
-1. There are transformer models params saved on a google drive but these models are not efficient since they are only trained for 1 epoch for reference and stored as `.pth files`. For inferencing on a sample test set with the same format as the `train_ata.json`.
+1. There are transformer models params saved on a google drive but these models are not efficient since they are only trained for 1 epoch for reference and stored as `.pth files`. For inferencing on a sample test set with the same format as the `train_data.json`.
+   
         - Firstly download the `test_data.json` from the required source.
         - Save it in a google drive link and download the drive link in a cell present in the script `NMT_final_script.ipynb`
         - Run the script
